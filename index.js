@@ -62,11 +62,11 @@ console.log(makePersonObject(5, "Leia", "leia@leia.com"));
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(userID, userName, userEmail) {
+function getName(object) {
       return 'Hello, my name is {name}';
   };
 
-console.log(getName());
+  console.log(getName('object'));
 /**
  * ### Challenge `makeSmartPerson`
  * 
@@ -215,8 +215,8 @@ function getModelYears(/* code here */) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars(array, number) {
+  return [car_year]
 }
 
 /**
