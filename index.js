@@ -227,9 +227,10 @@ function getModelYears(inventory) {
  * in the same order as they appear in the original inventory.
 */
 function getOlderCars(inventory, year) {
-  const oldCars = [];
-  for (let i = 0; i < inventory.length; i++)
-    oldCars.push()
+  // const oldCars = [];
+  // for (let i = 0; i < inventory.length; i++)
+  //   oldCars.push(inventory[i].car_year);
+  //   return oldCars;
 }
 
 /**
@@ -265,9 +266,15 @@ function getGermanCars(inventory) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+const sum = (a, b) => {
+  return a + b
+}
+const addFive = (num) => {
+  return num + 5
+}
+const argTimesTwo = (num) => {
+  return num *2
+}
 
 /**
  * ### Challenge `carMaker`
