@@ -192,8 +192,8 @@ function getCarInfoById(inventory, id) {
 */
 function sortCarInventory(inventory) {
   return inventory.sort(function(a, b) {
-    const constA = a.car_model.toUpperCase();
-    const constB = b.car_model.toUpperCase();
+    const constA = a.car_model;
+    const constB = b.car_model;
     return (constA < constB) ? -1 : (constA > constB) ? 1 : 0;
   });
 }
@@ -209,8 +209,9 @@ function sortCarInventory(inventory) {
 */
 function getModelYears(inventory) {
   const result = [];
-  for (let i = 0; i < inventory.length; i++)
+  for (let i = 0; i < inventory.length; i++){
     result.push(inventory[i].car_year);
+  }
     return result;
   }
 
